@@ -1,4 +1,5 @@
 import js from '@eslint/js'
+import prettierConfig from 'eslint-config-prettier'
 import globals from 'globals'
 import jestDom from 'eslint-plugin-jest-dom'
 import jest from 'eslint-plugin-jest'
@@ -35,4 +36,5 @@ export default defineConfig([
       },
     },
   },
+  prettierConfig,
 ])

@@ -6,20 +6,16 @@ export const Counter = () => {
   return (
     <div>
       <h1>You clicked {count} times</h1>
-      <button onClick={() => setCount(count + 1)}>
-        Increment
-      </button>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
       <label htmlFor="amount">Amount</label>
       <input
         id="amount"
         type="number"
-        name='amount'
+        name="amount"
         value={amount}
         onChange={(e) => setAmount(parseInt(e.target.value, 10))}
       />
-      <button onClick={() => setCount(amount)}>
-        Set Amount
-      </button>
+      <button onClick={() => setCount(amount)}>Set Amount</button>
     </div>
   )
 }

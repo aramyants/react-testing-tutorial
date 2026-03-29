@@ -58,5 +58,5 @@ export const Application = () => {
         <button disabled>Submit</button>
       </form>
     </>
-  );
-};
+  )
+}
