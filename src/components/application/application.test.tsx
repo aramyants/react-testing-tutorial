@@ -53,5 +53,6 @@ describe('Application', () => {
 
     const submitButton = screen.getByRole('button');
     expect(submitButton).toBeInTheDocument();
+    expect(submitButton).toBeDisabled();
   });
 });

@@ -1,5 +1,7 @@
 import js from '@eslint/js'
 import globals from 'globals'
+import jestDom from 'eslint-plugin-jest-dom'
+import jest from 'eslint-plugin-jest'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import tseslint from 'typescript-eslint'
@@ -18,6 +20,19 @@ export default defineConfig([
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
+    },
+  },
+  {
+    files: ['**/*.{test,spec}.{ts,tsx}', '**/setupTests.ts'],
+    extends: [
+      jest.configs['flat/recommended'],
+      jestDom.configs['flat/recommended'],
+    ],
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.jest,
+      },
     },
   },
 ])

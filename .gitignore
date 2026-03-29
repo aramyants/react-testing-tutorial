@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Testing
+coverage
+*.lcov
+jest-coverage
+jest-test-results.json
