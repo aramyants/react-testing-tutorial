@@ -10,7 +10,14 @@ export const Application = () => {
       <form>
         <div>
           <label htmlFor="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Fullname" value="Aram" onChange={()=>{}} />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Fullname"
+            value="Aram"
+            onChange={() => {}}
+          />
         </div>
         <div>
           <label htmlFor="bio">Bio</label>
