@@ -13,6 +13,9 @@
     "test:coverage": "node scripts/run-jest.cjs --coverage"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.9",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "yarn": "^1.22.22"
